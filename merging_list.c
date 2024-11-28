@@ -46,7 +46,6 @@ void merge(struct node **first, struct node *second)
         *first = second;
         return;
     }
-
     struct node *temp;
     temp = *first;
     while (temp->next != NULL)
