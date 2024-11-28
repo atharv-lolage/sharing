@@ -67,5 +67,9 @@ int main()
     display(fhead);
     printf("\nSecond list\t:\t");
     display(shead);
+
+    merge(fhead,shead);
+    printf("\nMerged list\t:\t");
+    display(fhead);
     return 0;
 }
