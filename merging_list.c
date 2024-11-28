@@ -63,13 +63,15 @@ int main()
     printf("\nEnter elements for swcond list : \t:\t");
     addNode(&shead);
     addNode(&shead);
-    printf("\nFirst list\t:\t");
 
+    printf("\nFirst list\t:\t");
     display(fhead);
+
     printf("\nSecond list\t:\t");
     display(shead);
 
     merge(&fhead, shead);
+    
     printf("\nMerged list\t:\t");
     display(fhead);
     return 0;
