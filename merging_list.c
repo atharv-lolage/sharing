@@ -56,11 +56,11 @@ void merge(struct node **first, struct node *second)
 }
 int main()
 {
-    printf("\nEnter elements for first list : \t:\t");
+    printf("\nEnter elements for first list\t:\t");
     addNode(&fhead);
     addNode(&fhead);
 
-    printf("\nEnter elements for swcond list : \t:\t");
+    printf("\nEnter elements for swcond list\t:\t");
     addNode(&shead);
     addNode(&shead);
 
@@ -71,7 +71,7 @@ int main()
     display(shead);
 
     merge(&fhead, shead);
-    
+
     printf("\nMerged list\t:\t");
     display(fhead);
     return 0;
