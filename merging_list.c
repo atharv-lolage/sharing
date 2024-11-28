@@ -39,16 +39,16 @@ void display(struct node *head)
     }
 }
 
-void merge(struct node *first, struct node *second)
+void merge(struct node **first, struct node *second)
 {
-    if (first == NULL)
+    if (*first == NULL)
     {
-        first = second;
+        *first = second;
         return;
     }
 
     struct node *temp;
-    temp = temp->next;
+    temp = *first;
     while (temp->next != NULL)
     {
         temp = temp->next;
@@ -68,7 +68,7 @@ int main()
     printf("\nSecond list\t:\t");
     display(shead);
 
-    merge(fhead,shead);
+    merge(&fhead, shead);
     printf("\nMerged list\t:\t");
     display(fhead);
     return 0;
